@@ -17,6 +17,8 @@ document.onkeyup = function(event){
 
     choiceForComputer = randomAlphabetLetter;
      console.log("Computer Choice: "  + choiceForComputer);
+  
+  if (event.keyCode >= 65 && event.keyCode <= 90) { 
 
   if(guessForUser === choiceForComputer){
 
@@ -27,7 +29,7 @@ document.onkeyup = function(event){
     document.getElementById("wins").textContent ="Wins: " + wins;
 
   resetGame();
-  
+
   }
   else if(guessForUser !== choiceForComputer){
       
@@ -39,6 +41,8 @@ document.onkeyup = function(event){
       document.getElementById("Guessleft").textContent = "Guess Left: " + guessLeft;
     //   resetGame();
     }
+
+   
     
     if (guessLeft <= 0){
         alert("Game is Over");
@@ -49,6 +53,7 @@ document.onkeyup = function(event){
         resetGame();
     
   }
+}
 
 function resetGame(){
     // wins = 0;
