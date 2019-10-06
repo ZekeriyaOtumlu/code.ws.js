@@ -1,0 +1,27 @@
+body {
+background: linear-gradient(to right, gray, rgb(139, 139, 233));
+}
+
+.main{
+   text-align: center;
+   margin-top: 120px;
+}
+
+h1{
+    text-shadow: 3px 3px yellow,
+                 5px 5px red ;
+    font-size: 60px;
+                
+}
+
+h3{
+    font-size: 2em;
+    color: rgb(27, 58, 83);
+    font-weight: bold;
+}
+
+p{
+    font-size: 26px;
+    font-weight: 700;
+    color: khaki;
+}
